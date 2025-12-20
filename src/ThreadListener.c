@@ -1,3 +1,4 @@
+/* This code is an example of producer and consumer model */
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
@@ -145,7 +146,7 @@ void *consumerThread(void *args)
         LOG("consumer thread could not create file");
         return NULL;
     }
-    LOG("consumer file opened: %s with fd: %d", consumerCreatedFile, consumerFileFd);
+    LOG(" [VENU]consumer file opened: %s with fd: %d", consumerCreatedFile, consumerFileFd);
 
     while (1)
     {
